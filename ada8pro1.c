@@ -5,7 +5,7 @@
 #include <math.h>
 float* leer (float n);
 void recta (float *x,float *y,float n);
-int* valpos(int *z,int ndim,int dim);
+
 int npos (int *z,int dim);
 int menu(void);
 int main(void)
@@ -72,7 +72,7 @@ B=(((a)*(a2))-((a3)*(a)))/(((n)*(a2))-((a3)*(a3)));
 printf ("Los coeficientes son A=%4.2f y B=%4.2f",A,B);
 return;
 }
-int* valpos(int *z,int ndim,int dim){
+int *valpos(int *z,int ndim,int dim){
 int *p,i,j;
 p=(int*)malloc(ndim*sizeof(int));
 j=0;
