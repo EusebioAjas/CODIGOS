@@ -25,7 +25,6 @@ int main() {
 		case 5:
 			listaAlumnos();
 			break;
-			
 		}
 		getchar();
 		op=menu();
@@ -37,11 +36,11 @@ int main() {
 int menu(){
 	int op;
 	printf("1.-ALTA ALUMNO\n");
-	printf("2.-BAJA ALUMNO \n");
+	printf("2.-BAJA ALUMNO\n");
 	printf("3.-MODIFICAR ALUMNO\n");
 	printf("4.-BUSCAR ALUMNO\n");
 	printf("5.-LISTA ALUMNOS\n");
-	printf("6.-KISTA FILTROS\n");
+	printf("6.-LISTA FILTROS\n");
 	printf("7.-TOTAL DE ALUMNOS\n");
 	printf("8.-INSCRIBIRSE A ASIGNATURA LIBRE\n");
 	printf("9.-TERMINAR\n");
@@ -49,7 +48,7 @@ int menu(){
 	scanf("%d",&op);
 	return op;
 }
-void altaAlumnos(){/*matricula, nombre, edad, licenciaura, creditos, semestre*/
+void altaAlumnos(){/*matricula, nombre, edad, licenciatura, creditos, semestre*/
 	char arch[15];
 	int n;
 	printf("\ningresar nombre del archivo:");
